@@ -7,8 +7,8 @@ let state = {
       { id: 2, message: 'It is my first post', likesCount: 1029 },
       { id: 3, message: 'It is my first post', likesCount: 568 },
       { id: 4, message: 'It is my first post', likesCount: 109 }
-    ]
-    
+    ],
+    newPostText: "It-Kamasutra"
     
   },
     dialogsPage: {
