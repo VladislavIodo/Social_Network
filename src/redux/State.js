@@ -60,6 +60,7 @@ let store ={
     }
   }
 }
+let test = a;
 
 export const addPostActionCreator = () => ({ type: ADD_POST })
 
