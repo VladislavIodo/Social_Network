@@ -13,9 +13,9 @@ let write = ()=>{
     return (
         <div className={classes.message}>
             <div>{props.message}</div>
-        <div><textarea ref={addText}></textarea>
-        <button onClick={write}>add</button>
-        </div>
+        {/*<div><textarea ref={addText}></textarea>*/}
+        {/*<button onClick={write}>add</button>*/}
+        {/*</div>*/}
         </div>
     );
 }
