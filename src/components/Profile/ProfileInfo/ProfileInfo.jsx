@@ -1,13 +1,18 @@
 import React from 'react';
-import classes from './ProfileInfo.module.css';
-
+import s from './ProfileInfo.module.css';
 
 const ProfileInfo = () => {
     return (
         <div>
-            <div><img src='https://fainaidea.com/wp-content/uploads/2019/06/acastro_190322_1777_apple_streaming_0003.0.jpg' alt=""></img></div>
-            <div className={classes.descriptionBlock}>ava + description</div>
+            <div>
+                <img
+                    src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350'/>
+            </div>
+            <div className={s.descriptionBlock}>
+                ava + description
+            </div>
         </div>
-    );
+    )
 }
+
 export default ProfileInfo;

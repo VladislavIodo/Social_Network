@@ -1,11 +1,10 @@
 import React from 'react';
-import classes from './Header.module.css';
+import s from './Header.module.css';
 
 const Header = () => {
-    return (
-        <header className={classes.header}>
-            <img src='https://www.neteseven.com/wp-content/uploads/2015/12/cheap-logo-design.jpg'></img>
-        </header>
-    );
+    return <header className={s.header}>
+        <img src='https://www.freelogodesign.org/Content/img/logo-ex-7.png' />
+    </header>
 }
+
 export default Header;
