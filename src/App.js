@@ -10,19 +10,18 @@ import DialogsContainer from "./components/Dialogs/DialogsContainer";
 const App = (props) => {
     debugger
     return (
-            <div className='app-wrapper'>
-                <Header />
-                <Navbar />
-                <div className='app-wrapper-content'>
-                    <Route path='/dialogs'
-                           render={ () => <DialogsContainer store={props.store} /> }/>
+        <div className='app-wrapper'>
+            <Header/>
+            <Navbar/>
+            <div className='app-wrapper-content'>
+                <Route path='/dialogs'
+                       render={() => <DialogsContainer/>}/>
 
-                    <Route path='/profile'
-                           render={ () => <Profile
-                               store={props.store} /> }/>
-                </div>
+                <Route path='/profile'
+                       render={() => <Profile />}/>
             </div>
-        )
+        </div>
+    )
 }
 
 export default App;
