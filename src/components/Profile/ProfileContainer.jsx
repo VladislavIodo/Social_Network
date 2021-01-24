@@ -8,7 +8,6 @@ import {withRouter} from "react-router-dom";
 class ProfileContainer extends React.Component {
 
     componentDidMount() {  //включает гифку загрузки
-        debugger
         let userId = this.props.match.params.userId;
         if (!userId) {
             userId = 2;

@@ -20,7 +20,7 @@ class UsersContainer extends React.Component {
             this.props.toggleIsFetching(false);    //выключает гифку загрузки, после прогружения страницы
             this.props.setUsers(response.data.items);
             this.props.setTotalUsersCount(response.data.totalCount);
-        })
+        });
     }
 
     onPageChanged = (pageNumber) => {
