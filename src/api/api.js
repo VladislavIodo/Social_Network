@@ -20,7 +20,7 @@ export const usersAPI = {
             .then(response => response.data);
     },
     follow(userId) {
-        return instance.post(`follow/${userId}`, {})
+        return instance.post(`follow/${userId}`)
             .then(response => response.data);
     },
     getProfile(userId) {

@@ -28,8 +28,9 @@ class UsersContainer extends React.Component {
     }
 
     render() {
+        console.log("USERS");
         return <>
-            { this.props.isFetching ? <Preloader /> : null }  {/*отображение гифки загрузки в коде с условием*/}
+            { this.props.isFetching ? <Preloader /> : null }
             <Users totalUsersCount={this.props.totalUsersCount}
                    pageSize={this.props.pageSize}
                    currentPage={this.props.currentPage}
@@ -54,6 +55,7 @@ class UsersContainer extends React.Component {
 // }
 
 let mapStateToProps = (state) => {
+    console.log('mapStateToProps USERS')
     return {
         users: getUsers(state),
         pageSize: getPageSize(state),
@@ -64,8 +66,7 @@ let mapStateToProps = (state) => {
     }
 }
 
-// let withRedirect = withAuthRedirect(UsersContainer)
 
 export default compose(
     connect(mapStateToProps,{follow, unfollow, setCurrentPage, toggleFollowingProgress, getUsers: requestUsers })
-)(UsersContainer);
+)(UsersContainer)
